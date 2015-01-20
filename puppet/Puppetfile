@@ -1,0 +1,13 @@
+forge "https://forgeapi.puppetlabs.com"
+
+
+mod 'puppetlabs/stdlib'
+mod 'maestrodev/rvm' 
+mod 'maestrodev/wget' 
+mod 'puppetlabs/mongodb' 
+mod 'stankevich/python' 
+mod 'puppetlabs/vcsrepo' 
+mod 'puppetlabs/ntp' 
+
+mod 'invernizzi/an_example', :path => 'custom_modules/an_example/'
+
