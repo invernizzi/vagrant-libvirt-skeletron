@@ -35,8 +35,9 @@ end
 def define_a_vm(config, options)
   config.vm.define options[:name] do |machine|
     set_external_ip(machine, options[:ip]) if options[:ip]
+    machine.vm.host_name = options[:name]
     run_on_host(machine, options)
-    provision_with_puppet(machine, options[:manifest])
+    provision_with_puppet(machine, options[:manifest]) if options[:manifest]
   end
 end
 
